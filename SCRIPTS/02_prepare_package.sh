@@ -320,7 +320,7 @@ svn export https://github.com/QiuSimons/openwrt-mos/trunk/mosdns package/new/mos
 svn export https://github.com/QiuSimons/openwrt-mos/trunk/luci-app-mosdns package/new/luci-app-mosdns
 svn export https://github.com/QiuSimons/openwrt-mos/trunk/v2ray-geodata package/new/v2ray-geodata
 # 流量监管
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-netdata package/lean/luci-app-netdata
+git clone -b master --depth 1 https://github.com/sirpdboy/luci-app-netdata.git package/lean/luci-app-netdata
 # 上网 APP 过滤
 git clone -b master --depth 1 https://github.com/destan19/OpenAppFilter.git package/new/OpenAppFilter
 pushd package/new/OpenAppFilter
