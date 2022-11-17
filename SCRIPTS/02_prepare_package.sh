@@ -22,6 +22,9 @@ wget -P include/ https://github.com/immortalwrt/immortalwrt/raw/master/include/d
 sed -i '/unshift/d' scripts/download.pl
 sed -i '/mirror02/d' scripts/download.pl
 echo "net.netfilter.nf_conntrack_helper = 1" >>./package/kernel/linux/files/sysctl-nf-conntrack.conf
+# change ip
+sed -i 's/192.168.1.1/10.10.0.2/g' package/base-files/files/bin/config_generate
+
 
 
 ### 必要的 Patches ###
